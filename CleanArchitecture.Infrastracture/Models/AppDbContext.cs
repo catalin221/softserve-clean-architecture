@@ -25,6 +25,14 @@ namespace CleanArchitecture.Infrastracture.Models
         public DbSet<Category> Categories { get; set; }
 
         public DbSet<User> Users { get; set; }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            if (!optionsBuilder.IsConfigured)
+            {
+                optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=Architecture;MultipleActiveResultSets=true");
+            }
+        }
     }
 
     [System.Diagnostics.CodeAnalysis.SuppressMessage("StyleCop.CSharp.MaintainabilityRules", "SA1402:File may only contain a single type", Justification = "For clarity")]

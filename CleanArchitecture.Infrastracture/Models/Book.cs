@@ -16,7 +16,7 @@ namespace CleanArchitecture.Infrastracture.Models
 
         public DateTime PublicationDate { get; set; }
 
-        public List<string> CoAuthors { get; set; } = new List<string>();
+        public string CoAuthors { get; set; } = string.Empty;
 
         public List<Category>? Categories { get; set; }
 
