@@ -5,17 +5,16 @@ namespace CleanArchitecture.Infrastracture.Models
     public class Borrowing
     {
         [Required]
-        public int Id { get; private set; }
+        public int Id { get; set; }
         [Required]
-        public int? UserId { get; private set; }
+        public int? UserId { get; set; }
         [Required]
-        public User? User { get; private set; }
+        public User? User { get; set; }
         [Required]
-        public int? BookCopyId { get; private set; }
+        public int? BookCopyId { get; set; }
         [Required]
-        public BookCopy? BookCopy { get; private set; }
-        public DateTime? StartDate { get; private set; }
-        public DateTime? EndDate { get; private set; }
-        public DateTime? TimeSpent { get; private set; }
+        public BookCopy? BookCopy { get; set; }
+        public DateTime? StartDate { get; set; }
+        public DateTime? EndDate { get; set; }
     }
 }

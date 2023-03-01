@@ -23,5 +23,7 @@ namespace CleanArchitecture.Infrastracture.Models
         public string Role { get; set; } = string.Empty;
 
         public DateTime RegistrationDate { get; set; }
+
+        public List<Borrowing>? Borrowings { get; set; }
     }
 }

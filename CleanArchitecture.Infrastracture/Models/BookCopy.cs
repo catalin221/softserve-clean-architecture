@@ -10,15 +10,17 @@ namespace CleanArchitecture.Infrastracture.Models
     public class BookCopy
     {
         [Required]
-        public int Id { get; private set; }
+        public int Id { get; set; }
 
         [Required]
-        public int? BookId { get; private set; }
+        public int? BookId { get; set; }
 
         [Required]
-        public Book? Book { get; private set; }
+        public Book? Book { get; set; }
 
         [Required]
-        public bool? IsBorrowed { get; private set; }
+        public bool? IsBorrowed { get; set; }
+
+        public List<Borrowing>? Borrowings { get; set; }
     }
 }
