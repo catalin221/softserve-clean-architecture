@@ -1,0 +1,27 @@
+﻿@model IQueryable<Book>
+@{
+	Layout = "_Layout";
+}
+
+@foreach(var book in Model)
+{
+	<ul class="list-group">
+		<li class="list-group-item">Title: @(book.Title)</li>
+		<li class="list-group-item">Author: @(book.Author)</li>
+		<li class="list-group-item">Co-authors: @(book.CoAuthors)</li>
+		<li class="list-group-item">Publication date: @(book.PublicationDate.ToString("dd-MM-yy"))</li>
+		<li class="list-group-item">Categories:
+			@foreach(var cat in book.Categories)
+			{
+				<span>@(cat.CategoryName + ", ")</span>
+			}
+		</li>
+		<li class="list-group-item">Book Copies:
+			@foreach (var copy in book.BookCopies)
+			{
+				<span>@(copy.Id + " ")</span>
+			}
+		</li>
+	</ul>
+	<br />
+}

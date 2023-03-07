@@ -18,7 +18,7 @@ namespace CleanArchitecture.Infrastracture.Models
 
         public string CoAuthors { get; set; } = string.Empty;
 
-        public List<Category>? Categories { get; set; }
+        public List<Category> Categories { get; set; }
 
         public List<BookCopy>? BookCopies { get; set; }
     }

@@ -1,4 +1,5 @@
 using CleanArchitecture.Infrastracture.Models;
+using CleanArchitecture.Infrastracture.Models.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -16,6 +17,8 @@ if (!string.IsNullOrEmpty(connectionString))
     });
 }
 
+builder.Services.AddScoped<IBookRepository, BookRepository>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -25,11 +28,7 @@ if (!app.Environment.IsDevelopment())
 }
 app.UseStaticFiles();
 
-app.UseRouting();
-
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+app.MapDefaultControllerRoute();
 
 using (var scope = app.Services.CreateScope())
 {

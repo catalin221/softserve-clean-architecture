@@ -21,6 +21,6 @@ namespace CleanArchitecture.Infrastracture.Models
         [Required]
         public bool IsBorrowed { get; set; }
 
-        public List<Borrowing> Borrowings { get; set; }
+        //public List<Borrowing> Borrowings { get; set; }
     }
 }
