@@ -20,6 +20,6 @@ namespace CleanArchitecture.Infrastracture.Models
 
         public List<Category> Categories { get; set; }
 
-        public List<BookCopy>? BookCopies { get; set; }
+        public List<BookCopy> BookCopies { get; set; }
     }
 }

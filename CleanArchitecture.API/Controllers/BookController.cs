@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CleanArchitecture.API.Controllers
 {
-	[Route("book")]
+	[Route("Book")]
 	public class BookController : Controller
 	{
 		private readonly IBookRepository repository;
@@ -16,10 +16,24 @@ namespace CleanArchitecture.API.Controllers
 
 
 		[HttpGet]
-		[Route("list")]
+		[Route("List")]
 		public IActionResult Index()
 		{
 			return View(this.repository.Books.Include(b => b.Categories).Include(b => b.BookCopies));
+		}
+
+		[HttpPost]
+		[Route("Delete/{id:long}")]
+		public IActionResult Delete(int id)
+		{
+			var book = repository.Books.Include(b => b.BookCopies).Include(b => b.Categories).FirstOrDefault(b => b.Id == id);
+			if (book == null)
+			{
+				return RedirectToAction("Index");
+			}
+
+			this.repository.DeleteBook(book);
+			return RedirectToAction("Index");
 		}
 	}
 }
