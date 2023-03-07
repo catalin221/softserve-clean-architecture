@@ -13,14 +13,14 @@ namespace CleanArchitecture.Infrastracture.Models
         public int Id { get; set; }
 
         [Required]
-        public int? BookId { get; set; }
+        public int BookId { get; set; }
 
         [Required]
-        public Book? Book { get; set; }
+        public Book Book { get; set; }
 
         [Required]
-        public bool? IsBorrowed { get; set; }
+        public bool IsBorrowed { get; set; }
 
-        public List<Borrowing>? Borrowings { get; set; }
+        public List<Borrowing> Borrowings { get; set; }
     }
 }

@@ -6,6 +6,6 @@
 
         public string CategoryName { get; set; } = string.Empty;
 
-        public List<Book>? Books { get; set;}
+        public List<Book> Books { get; set;}
     }
 }
