@@ -1,25 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Paul\\Desktop\\softserve-clean-architecture\\CleanArchitecture.API\\CleanArchitecture.API.csproj": {}
+    "C:\\Users\\msuro\\OneDrive\\Pulpit\\NET training\\SoftServe\\5 - Clean Architecture\\softserve-clean-architecture\\CleanArchitecture.API\\CleanArchitecture.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Paul\\Desktop\\softserve-clean-architecture\\CleanArchitecture.API\\CleanArchitecture.API.csproj": {
+    "C:\\Users\\msuro\\OneDrive\\Pulpit\\NET training\\SoftServe\\5 - Clean Architecture\\softserve-clean-architecture\\CleanArchitecture.API\\CleanArchitecture.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Paul\\Desktop\\softserve-clean-architecture\\CleanArchitecture.API\\CleanArchitecture.API.csproj",
+        "projectUniqueName": "C:\\Users\\msuro\\OneDrive\\Pulpit\\NET training\\SoftServe\\5 - Clean Architecture\\softserve-clean-architecture\\CleanArchitecture.API\\CleanArchitecture.API.csproj",
         "projectName": "CleanArchitecture.API",
-        "projectPath": "C:\\Users\\Paul\\Desktop\\softserve-clean-architecture\\CleanArchitecture.API\\CleanArchitecture.API.csproj",
-        "packagesPath": "C:\\Users\\Paul\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Paul\\Desktop\\softserve-clean-architecture\\CleanArchitecture.API\\obj\\",
+        "projectPath": "C:\\Users\\msuro\\OneDrive\\Pulpit\\NET training\\SoftServe\\5 - Clean Architecture\\softserve-clean-architecture\\CleanArchitecture.API\\CleanArchitecture.API.csproj",
+        "packagesPath": "C:\\Users\\msuro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\msuro\\OneDrive\\Pulpit\\NET training\\SoftServe\\5 - Clean Architecture\\softserve-clean-architecture\\CleanArchitecture.API\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Paul\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\msuro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -27,15 +22,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Paul\\Desktop\\softserve-clean-architecture\\CleanArchitecture.Infrastracture\\CleanArchitecture.Infrastracture.csproj": {
-                "projectPath": "C:\\Users\\Paul\\Desktop\\softserve-clean-architecture\\CleanArchitecture.Infrastracture\\CleanArchitecture.Infrastracture.csproj"
+              "C:\\Users\\msuro\\OneDrive\\Pulpit\\NET training\\SoftServe\\5 - Clean Architecture\\softserve-clean-architecture\\CleanArchitecture.Infrastracture\\CleanArchitecture.Infrastracture.csproj": {
+                "projectPath": "C:\\Users\\msuro\\OneDrive\\Pulpit\\NET training\\SoftServe\\5 - Clean Architecture\\softserve-clean-architecture\\CleanArchitecture.Infrastracture\\CleanArchitecture.Infrastracture.csproj"
               }
             }
           }
@@ -49,6 +43,14 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.14, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -72,22 +74,17 @@
         }
       }
     },
-    "C:\\Users\\Paul\\Desktop\\softserve-clean-architecture\\CleanArchitecture.Infrastracture\\CleanArchitecture.Infrastracture.csproj": {
+    "C:\\Users\\msuro\\OneDrive\\Pulpit\\NET training\\SoftServe\\5 - Clean Architecture\\softserve-clean-architecture\\CleanArchitecture.Infrastracture\\CleanArchitecture.Infrastracture.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Paul\\Desktop\\softserve-clean-architecture\\CleanArchitecture.Infrastracture\\CleanArchitecture.Infrastracture.csproj",
+        "projectUniqueName": "C:\\Users\\msuro\\OneDrive\\Pulpit\\NET training\\SoftServe\\5 - Clean Architecture\\softserve-clean-architecture\\CleanArchitecture.Infrastracture\\CleanArchitecture.Infrastracture.csproj",
         "projectName": "CleanArchitecture.Infrastracture",
-        "projectPath": "C:\\Users\\Paul\\Desktop\\softserve-clean-architecture\\CleanArchitecture.Infrastracture\\CleanArchitecture.Infrastracture.csproj",
-        "packagesPath": "C:\\Users\\Paul\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Paul\\Desktop\\softserve-clean-architecture\\CleanArchitecture.Infrastracture\\obj\\",
+        "projectPath": "C:\\Users\\msuro\\OneDrive\\Pulpit\\NET training\\SoftServe\\5 - Clean Architecture\\softserve-clean-architecture\\CleanArchitecture.Infrastracture\\CleanArchitecture.Infrastracture.csproj",
+        "packagesPath": "C:\\Users\\msuro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\msuro\\OneDrive\\Pulpit\\NET training\\SoftServe\\5 - Clean Architecture\\softserve-clean-architecture\\CleanArchitecture.Infrastracture\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Paul\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\msuro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -95,7 +92,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -133,6 +129,18 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.14, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.FileExtensions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             }
           },
           "imports": [
