@@ -17,8 +17,4 @@
     <ProjectReference Include="..\CleanArchitecture.Infrastracture\CleanArchitecture.Infrastracture.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Views\Shared\" />
-  </ItemGroup>
-
 </Project>
