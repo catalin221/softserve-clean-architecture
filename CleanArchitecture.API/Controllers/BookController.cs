@@ -17,7 +17,7 @@ namespace CleanArchitecture.API.Controllers
 
 		[HttpGet]
 		[Route("List")]
-		public IActionResult Index()
+		public ViewResult Index()
 		{
 			return View(this.repository.Books.Include(b => b.Categories).Include(b => b.BookCopies));
 		}
@@ -34,6 +34,20 @@ namespace CleanArchitecture.API.Controllers
 
 			this.repository.DeleteBook(book);
 			return RedirectToAction("Index");
+		}
+
+		[HttpGet]
+		[Route("Edit/{id:long}")]
+		public IActionResult Edit(int id)
+		{
+			var book = repository.Books.Include(b => b.BookCopies).Include(b => b.Categories).FirstOrDefault(b => b.Id == id);
+
+			if (book == null)
+			{
+				return RedirectToAction("Index");
+			}
+
+			return View(book);
 		}
 	}
 }

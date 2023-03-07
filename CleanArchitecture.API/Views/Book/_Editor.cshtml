@@ -1,0 +1,62 @@
+﻿@model (Book book, string ThemeColor, string TitleText, string CallbackMethodName)
+
+@{
+    Book book = Model.book;
+}
+
+<h3 class="bg-@Model.ThemeColor text-white text-center p-1">@Model.TitleText a book: @book.Title</h3>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="@Model.CallbackMethodName" asp-controller="Book" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            @if (book.Id != 0)
+            {
+                <div class="form-group">
+                    <label asp-for="@book.Id" class="control-label"></label>
+                    <input asp-for="@book.Id" class="form-control" readonly />
+                </div>
+            }
+            <div class="form-group">
+                <label asp-for="@book.Title" class="control-label"></label>
+                <input asp-for="@book.Title" class="form-control" />
+                <span asp-validation-for="@book.Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@book.Author" class="control-label"></label>
+                <input asp-for="@book.Author" class="form-control" />
+                <span asp-validation-for="@book.Author" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@book.PublicationDate" class="control-label"></label>
+                <input asp-for="@book.Author" class="form-control" />
+                <span asp-validation-for="@book.Author" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@book.PublicationDate" class="col-1 col-form-label">Date:</label>
+                <div class="col-5">
+                    <div class="input-group date" id="datepicker">
+                        <input asp-for="@book.PublicationDate" type="text" class="form-control" id="date" value="@DateTime.Now.Date.ToString("dd-MM-yyyy")" />
+                        <span class="input-group-append">
+                            <span class="input-group-text bg-light d-block">
+                                <i class="bi bi-calendar-date"></i>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+                <span asp-validation-for="@book.PublicationDate" class="text-danger"></span>
+            </div>
+            <div class="mt-2">
+                <button type="submit" class="btn btn-@Model.ThemeColor" asp-route-id="@(book.Id)">Save</button>
+                <a class="btn btn-secondary" asp-controller="Home" asp-action="Index">Cancel</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $("#datepicker").datepicker({
+            format: 'dd-mm-yyyy'
+        })
+    });
+</script>
