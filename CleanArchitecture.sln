@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.API", "CleanArchitecture.API\CleanArchitecture.API.csproj", "{E66657DC-96FA-429B-B9FB-8FBC82BA8C0D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitecture.API", "CleanArchitecture.API\CleanArchitecture.API.csproj", "{E66657DC-96FA-429B-B9FB-8FBC82BA8C0D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.Infrastracture", "CleanArchitecture.Infrastracture\CleanArchitecture.Infrastracture.csproj", "{51CECDFB-7A41-4240-AAFF-365C2DDEAD64}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitecture.Infrastracture", "CleanArchitecture.Infrastracture\CleanArchitecture.Infrastracture.csproj", "{51CECDFB-7A41-4240-AAFF-365C2DDEAD64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.Application", "CleanArchitecture.Application\CleanArchitecture.Application.csproj", "{5F440AE9-4CC4-40DE-92A8-EC3B542867BA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{51CECDFB-7A41-4240-AAFF-365C2DDEAD64}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51CECDFB-7A41-4240-AAFF-365C2DDEAD64}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51CECDFB-7A41-4240-AAFF-365C2DDEAD64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F440AE9-4CC4-40DE-92A8-EC3B542867BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F440AE9-4CC4-40DE-92A8-EC3B542867BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F440AE9-4CC4-40DE-92A8-EC3B542867BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F440AE9-4CC4-40DE-92A8-EC3B542867BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
